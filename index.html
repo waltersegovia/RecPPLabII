@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<htnl>
+    <head>
+        <meta charset="UTF-8">
+        <title>Laboratorio III - Recuperatorio Primer Parcial</title>
+
+	    <link rel="stylesheet" type="text/css" href="./css/jsonEstilos.css">
+        <script type="text/javascript" src="./js/jsonFunciones.js" ></script>        
+    </head>
+    <body>
+        <div id="divAgregar">
+            <button class="btnAgregar" id="btn" onclick="abrir();" >Agregar</button> 
+        </div>
+            
+
+            <div id="contAgregar" class="contenedor" hidden> 
+            <form name=formulario>
+                <div class="bCerrar" id="contenedor1">
+                    <div class="tituloH2" >
+                        <h2>FORMULARIO DE ALTA</h2>
+                    </div>
+                    <div>
+                        <button id="btnCerrar" class="cerrar" onclick="cerrar();">x</button>
+                    </div>
+                </div>
+                <br>
+                <!--
+                <br>
+                <input type="hidden" id="id" class="sinError" name="idname" disabled></input>
+                <br>
+                -->
+                <label for="make">Marca</label>
+                <br>
+                <input type="text" id="make" class="sinError" name="makeNombre" placeholder="Nombre mínimo 3 caracteres ..." minlength="3" required></input>
+                <br>
+                <label for="model">Modelo</label>
+                <br>
+                <input type="text" id="model" class="sinError" name="cuatrimestreNombre" placeholder="Modelo mínimo 3 caracteres ..." minlength="3" required></input>
+                <br>
+                <label for="year">Año</label>
+                <br>
+                <select id="year" name="yearA" >
+                    <option value="2020">2000</option>
+                    <option value="2020">2001</option>
+                    <option value="2020">2002</option>
+                    <option value="2020">2003</option>
+                    <option value="2020">2004</option>
+                    <option value="2020">2005</option>
+                    <option value="2020">2006</option>
+                    <option value="2020">2007</option>
+                    <option value="2020">2008</option>
+                    <option value="2020">2009</option>
+                    <option value="2020">2010</option>
+                    <option value="2020">2011</option>
+                    <option value="2020">2012</option>
+                    <option value="2020">2013</option>
+                    <option value="2020">2014</option>
+                    <option value="2020">2015</option>
+                    <option value="2020">2016</option>
+                    <option value="2020">2017</option>
+                    <option value="2020">2018</option>
+                    <option value="2020">2019</option>
+                    <option value="2020">2020</option>
+                </select>
+                
+
+                <br>
+                <div id="contenedor2">
+                    <!-- <input type="button" value="Guardar" onclick="agregar();"></input>-->
+                    <input type="button" value="Guardar" id = "btnModificar">
+                    <!--<input type="button" value="Eliminar" id = "btnElininar" onclick="eliminar();">-->
+                    <!--<input type="button" value="Eliminar" id = "btnEliminar">-->
+                    <!--<input type="reset"  value="Limpiar" onclick="limpiar()"></input>-->
+                </div>
+            </form>    
+            </div> 
+            <!--Fin contenedor-->
+            
+             <!-- spinner --> 
+             <div id="contenedor_carga" hidden>
+                <div id="carga"> </div>
+             </div>
+
+            <!-- Armo Tabla -->  
+            <h2>LISTA DE AUTOS</h2>
+            <br>
+            <div class="padre">
+            
+            <table id="tabla" class="hijo">
+                <thead>
+                    <tr>
+                        <th hidden>id</th>
+                        <th>MARCA</th>
+                        <th>MODELO</th>
+                        <th>AÑO</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+            <!--Fin tabla-->   
+        </div>          
+    </body>
+</htnl>

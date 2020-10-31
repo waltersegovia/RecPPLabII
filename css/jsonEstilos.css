@@ -1,0 +1,203 @@
+.contenedor{  
+    position: fixed;
+    bottom: 25%;
+    right: 25%;
+    border-radius: 5%;
+    width: 50%;
+    background-color: rgb(181, 187, 153);
+    padding: 20px;
+    animation-name: aparecer;
+    animation-duration: 4s;
+    /*ancho alto radio_som radio_pro color/opc */
+    box-shadow: 19px 10px 20px 0px rgba(0,0,0,0.40);
+    /* cambio los valores a 20px 20px 10px 0px*/
+    /*-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;*/
+    /*
+    box-sizing: border-box; /* Todo lo extra se consume para adentro del componente */
+        /*margin: auto;*/ /*Lo centra en la pantalla */
+}
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.bCerrar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.tituloH2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+}
+.cerrar{
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type=text],input[type=number],input[type=date]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=button]{
+    width: 30%;
+    background-color: #0e21ca;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+input[type = button]:hover{
+    background-color: rgb(33, 15, 109);
+}
+#btnElininar{
+    background-color: #e62c14;
+}
+input[type=reset]{
+    width: 30%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 0;
+    border: none;
+    cursor: pointer;
+}
+
+#divAgregar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnAgregar{
+    width: 25%;
+    margin: auto;
+    background-color: #21da68;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 0;
+    border: none;
+    cursor: pointer;
+
+ 
+}
+
+input[type = reset]:hover{
+    background-color: salmon;
+}
+
+.sinError{
+    border: 1px solid #cccccc;
+}
+
+.error{
+    border: 1px solid red;
+}
+
+.contenedorTabla{
+    position: relative;
+}
+
+#contenedor1 {
+    display: flex;
+    height: 10vh;
+    top: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#contenedor2 {
+    display: flex;
+    height: 10vh;
+    top: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@keyframes girar{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+/* tabla */
+
+tr:nth-child(even){
+    background-color: #89c9d1;
+    color: white;
+}
+
+th{
+    background-color: rgb(13, 147, 151);
+    color: rgb(229, 230, 228);
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    border: 1px solid #000;
+ }
+ th, td {
+    width: 25%;
+    text-align: center;
+    padding: 8px;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+ }
+ select{
+    cursor: pointer;
+ }
+ /* Fin tabla*/
+ .padre {
+    background: rgba(20, 8, 6, 0.199);
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hijo {
+    background: rgb(230, 234, 236);
+    width: 99%;
+    height: 98%;
+  }
+  .btn{
+    top: 0;
+    left: 0;
+    right: 80%;
+    bottom: 0;
+  }
